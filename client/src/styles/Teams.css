@@ -1,0 +1,133 @@
+.teams-container {
+  margin: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.teams-list {
+  display: flex;
+}
+
+.team-details {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.team-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.users-list {
+  height: 100px;
+  overflow-y: auto;
+  scrollbar-width: thin; /* толщина полосы */
+}
+
+.custom-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.custom-option:hover {
+  background-color: #f9f9f9;
+}
+
+.add-user-button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.add-user-button:hover {
+  background-color: var(--green-l);
+}
+
+.selected-users ul {
+  list-style: none;
+  padding: 0;
+}
+
+.selected-users li {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-t3ipsp-control {
+  border-color: #ddd !important; /* Цвет обводки */
+  box-shadow: none !important; /* Убираем стандартную синюю тень */
+}
+
+.css-t3ipsp-control:hover {
+  border-color: #5a5a5a !important; /* Цвет при наведении */
+}
+
+.css-t3ipsp-control:focus {
+  border-color: #4caf50 !important; /* Зеленая обводка при фокусе */
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5) !important; /* Зеленая тень */
+}
+
+.teams-btn {
+  padding: 10px 15px; /* Добавляем комфортные отступы */
+  border: 1px solid #ccc; /* Цвет рамки, как у селекта */
+  border-radius: 5px; /* Закругляем углы, как у селекта */
+  background-color: #fff; /* Белый фон */
+  color: #333; /* Цвет текста */
+  font-size: 16px; /* Размер текста */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Добавляем плавный переход */
+}
+
+.teams-btn:hover {
+  background-color: #f5f5f5; /* Лёгкий серый фон при наведении */
+  border-color: #888; /* Меняем цвет рамки */
+}
+
+.teams-btn:focus {
+  outline: none; /* Убираем стандартное выделение */
+}
+
+.teams-btn.active {
+  background-color: var(
+    --grey-accent,
+    #e6e6e6
+  ); /* Активная кнопка – серый фон */
+  border-color: #888; /* Активная кнопка – темнее рамка */
+  color: #000; /* Активная кнопка – чёрный текст */
+}
+
+.teams-input {
+  border-radius: 5px;
+}
+
+.teams-cont {
+  margin-top: 20px;
+}
+
+.teams-cont label {
+  margin-bottom: 10px;
+}
+
+
+.css-b62m3t-container{
+    margin-top: 5px;
+}

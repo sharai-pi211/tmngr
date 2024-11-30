@@ -1,0 +1,184 @@
+.tasks-container {
+  padding: 20px;
+  width: calc(100vw - 350px);
+}
+
+.tasks-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tasks-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.task-item h3 {
+  margin: 0 0 5px 0;
+}
+
+.task-item p {
+  margin: 5px 0;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.tasks-table th,
+.tasks-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tasks-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.tasks-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tasks-table th {
+  cursor: pointer;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+}
+
+.creator-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.create-task-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.pagination{
+  margin-top: 20px;
+}
+
+.pagination span{
+  margin: 0px 10px ;
+}
+
+
+.create-task-button:hover {
+  background-color: var(--green-l);
+}
+
+.view-switch {
+  display: flex;
+  gap: 5px;
+}
+
+.view-switch-btn {
+  padding: 10px 15px; /* Добавляем комфортные отступы */
+  border: 1px solid #ccc; /* Цвет рамки, как у селекта */
+  border-radius: 5px; /* Закругляем углы, как у селекта */
+  background-color: #fff; /* Белый фон */
+  color: #333; /* Цвет текста */
+  font-size: 16px; /* Размер текста */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Добавляем плавный переход */
+}
+
+.view-switch-btn:hover {
+  background-color: #f5f5f5; /* Лёгкий серый фон при наведении */
+  border-color: #888; /* Меняем цвет рамки */
+}
+
+.view-switch-btn:focus {
+  outline: none; /* Убираем стандартное выделение */
+}
+
+.view-switch-btn.active {
+  background-color: var(
+    --grey-accent,
+    #e6e6e6
+  ); /* Активная кнопка – серый фон */
+  border-color: #888; /* Активная кнопка – темнее рамка */
+  color: #000; /* Активная кнопка – чёрный текст */
+}
+
+.tasks-table td {
+  white-space: nowrap; /* Запрещает перенос текста на новую строку */
+  overflow: hidden; /* Скрывает текст, который не помещается */
+  text-overflow: ellipsis; /* Добавляет многоточие вместо обрезанного текста */
+  max-width: 150px; /* Ограничивает максимальную ширину ячейки */
+}
+
+.tasks-table th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.tasks-table {
+  table-layout: fixed; /* Устанавливает фиксированную ширину колонок */
+  width: 100%; /* Таблица занимает всю ширину */
+}
+
+.normal {
+  color: var(--green)
+}
+
+.low {
+  color: var(--yellow)
+}
+
+.high {
+  color: var(--red)
+}
+
+.in {
+  color: var(--orange)
+}
+
+.completed {
+  color: var(--green-l)
+}
+
+.todo {
+  color: var(--purple-w)
+}

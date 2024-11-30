@@ -1,0 +1,140 @@
+.calendar-view {
+  margin: 20px 0;
+}
+
+.calendar-tasks {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 0;
+  font-size: 12px;
+}
+
+.calendar-tasks li {
+  background: #3e98c7;
+  color: white;
+  padding: 2px 4px;
+  margin: 2px 0;
+  border-radius: 4px;
+}
+
+.task-calendar {
+  margin: 20px;
+  margin-left: 0;
+  width: calc(100vw - 350px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+}
+
+.react-calendar__tile {
+  position: relative;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.react-calendar__tile:focus,
+.react-calendar__tile:hover {
+  background-color: #eef4ff;
+  color: #003d99;
+}
+
+.calendar-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.calendar-task.low {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.calendar-task.normal {
+  background-color: #ffeeba;
+  color: #856404;
+  border-color: #ffeeba;
+}
+
+ .calendar-task.high {
+  background-color: var(--red);
+  color: #6b1c1c;
+} 
+/* 
+.calendar-task.todo {
+  background-color: #ffeeba;
+  color: #856404;
+  border-color: #ffeeba;
+} */
+
+.calendar-task:hover {
+  background-color: #f8f9fa;
+  border-color: #ddd;
+}
+
+.calendar-task:active {
+  background-color: #d6d8db;
+  border-color: #bbb;
+}
+
+/* Стили задач на плитке */
+.react-calendar__tile .calendar-task {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+/* Стили дней с задачами */
+.react-calendar__tile--has-tasks {
+  background-color: #f0f8ff;
+  border-color: #bcdffb;
+}
+
+.react-calendar__tile--has-tasks:hover {
+  background-color: #e3f2fd;
+}
+
+
+.react-calendar__tile{
+  min-height: 70px;
+}
+
+.react-calendar__navigation{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.react-calendar__navigation__arrow, .react-calendar__navigation__label{
+  padding: 10px 15px; /* Добавляем комфортные отступы */
+  border: 1px solid #ccc; /* Цвет рамки, как у селекта */
+  border-radius: 5px; /* Закругляем углы, как у селекта */
+  background-color: #fff; /* Белый фон */
+  color: #333; /* Цвет текста */
+  font-size: 16px; /* Размер текста */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Добавляем плавный переход */
+}
+
+
+.react-calendar__navigation__arrow:hover, .react-calendar__navigation__label:hover {
+  background-color: #f5f5f5; /* Лёгкий серый фон при наведении */
+  border-color: #888; /* Меняем цвет рамки */
+}
