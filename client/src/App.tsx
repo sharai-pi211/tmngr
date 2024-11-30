@@ -112,11 +112,6 @@ const App: React.FC = () => {
     setUserId(userId);
   }, []);
 
-  if (!userId) {
-    // Показываем загрузочный экран, пока userId не будет доступен
-    return <p>Loading...</p>;
-  }
-
   return (
     <WebSocketProvider>
       <Router>
