@@ -54,7 +54,7 @@ const Register: React.FC = () => {
         const result = await response.json();
         saveToLocalStorage("token", result.token);
         saveToLocalStorage("user", result.user);
-        alert("Registration successful!");
+        navigate("/");
       } else {
         const error = await response.json();
         alert(`Registration failed: ${error.message}`);
